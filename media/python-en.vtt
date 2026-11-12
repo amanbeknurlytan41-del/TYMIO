@@ -1,0 +1,28 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:22.000
+Lists, filtering and accumulation
+Track the state on every iteration. total is initialized once before the loop. n receives each new number while total keeps the accumulated value.
+
+00:00:22.000 --> 00:00:44.000
+Explanation
+% computes the remainder. n % 2 == 0 selects even numbers. Only these numbers contribute to the sum. += adds to the existing value.
+
+00:00:44.000 --> 00:01:06.000
+Trace the code
+numbers = [3, 8, 5, 12, 7]
+total = 0
+for n in numbers:
+    if n % 2 == 0:
+        total += n
+print(total)
+
+00:01:06.000 --> 00:01:28.000
+Result
+20
+
+Only 8 and 12 are even: 0 → 8 → 20. Other numbers leave total unchanged.
+
+00:01:28.000 --> 00:01:50.000
+Remember
+A common mistake is placing total = 0 inside the loop. That discards the previous sum on every iteration. Separate the input, filtering and accumulation steps.

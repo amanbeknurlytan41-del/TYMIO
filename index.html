@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="kk">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TYMIO — IT бәріне қолжетімді</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="orbit.css">
+    <link rel="stylesheet" href="sign-language.css">
+    <link rel="stylesheet" href="plus-features.css">
+    <link rel="stylesheet" href="light-overrides.css">
+    <link rel="stylesheet" href="polish.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#080e20">
+</head>
+
+<body><a class="skip" href="#main">Мазмұнға өту</a>
+    <header><a class="logo" href="#">tymio<span>✳</span></a>
+        <nav aria-label="Негізгі мәзір"><a href="#learn">Сабақтар</a><a href="#play">Код ойыны</a><a
+                href="#video">Видеосабақ</a></nav><button id="settings" aria-expanded="false">◐ Қолжетімділік</button>
+    </header>
+    <aside id="panel" hidden><strong>Өзіңе ыңғайла</strong><button id="contrast" aria-pressed="false">Жоғары
+            контраст</button><button id="font" aria-pressed="false">Үлкен мәтін</button>
+        <p>Tab — келесі батырма · Enter — таңдау. Барлық тапсырманы дыбыссыз орындауға болады.</p>
+    </aside>
+    <main id="main">
+        <section class="hero">
+            <div>
+                <div class="eyebrow">БІЛІМГЕ КЕДЕРГІ ЖОҚ / TYMIO</div>
+                <h1>Сенің әлемің.<br>Сенің <em>кодың.</em></h1>
+                <p class="lead">Әркімнің өз жолы. Бәріне бір мүмкіндік.<br>Python үйрен, ойнап тәжірибе жина және
+                    алғашқы идеяңды кодқа айналдыр.</p>
+                <div class="actions"><a class="primary" href="#learn">Алғашқы қадамды жаса ↗</a><a href="#play">Ойынды
+                        байқап көр →</a></div>
+                <div class="tags"><span>Қазақ тілінде</span><span>Өз қарқыныңмен</span><span>Тегін</span></div>
+            </div>
+            <div class="art" aria-label="Код арқылы мүмкіндіктерге жол ашу иллюстрациясы">
+                <div class="orbit"></div>
+                <div class="spark">✳</div>
+                <div class="codecard">
+                    <div class="dots">● ● ● <span>hello_future.py</span></div>
+                    <code><b>dream</b> = "Мен жасай аламын"<br><br><i>for</i> step <i>in</i> range(3):<br>　print(dream)<br><br><span class="green">→ Мен жасай аламын ✨</span></code>
+                </div>
+                <div class="sticker">Сенің қолыңнан келеді ↗</div>
+            </div>
+        </section>
+        <div class="strip"><span>01 / ҮЙРЕН</span><span>02 / ОЙНА</span><span>03 / ЖАСА</span><span>∞ / ӨС</span></div>
+        <section id="learn">
+            <div class="sectionhead">
+                <div>
+                    <div class="eyebrow">КІШКЕНТАЙ ҚАДАМ. ҮЛКЕН БАСТАМА.</div>
+                    <h2>Код әлеміне қош келдің.</h2>
+                </div><span id="progress">0 / 4 сабақ</span>
+            </div>
+            <div class="learning">
+                <div id="lessonlist"></div>
+                <article class="lesson">
+                    <div class="eyebrow" id="lessonnumber"></div>
+                    <h3 id="lessontitle"></h3>
+                    <p id="explain"></p>
+                    <pre id="example"></pre>
+                    <p id="question"></p>
+                    <div id="answers"></div>
+                    <p id="feedback" role="status"></p>
+                </article>
+            </div>
+        </section>
+        <section id="play" class="game">
+            <div>
+                <div class="eyebrow">ОЙНАП ҮЙРЕН / CODE QUEST</div>
+                <h2>Роботқа жол көрсет.</h2>
+                <p>Командаларды ретімен қосып, роботты жұлдызға жеткіз. Қабырғалардан айналып өт. Бұл — алгоритм құрудың
+                    алғашқы қадамы!</p>
+                <p id="level"></p>
+                <div class="controls"><button data-move="U">↑ Жоғары</button><button data-move="L">←
+                        Солға</button><button data-move="D">↓ Төмен</button><button data-move="R">→ Оңға</button></div>
+                <p id="queue" aria-live="polite">Командаларды таңда</p>
+                <div class="actions"><button class="primary" id="run">▶ Орындау</button><button id="reset">Қайта
+                        бастау</button><button id="undo">↶ Соңғысын өшіру</button></div>
+                <p id="gamestatus" role="status"></p>
+            </div>
+            <div>
+                <div id="board" aria-label="Ойын алаңы"></div>
+                <p class="legend">🤖 Робот · ★ Мақсат · ▧ Қабырға</p>
+            </div>
+        </section>
+        <section id="video">
+            <div class="eyebrow">КӨР. ОҚЫ. ҚАЙТАЛА.</div>
+            <h2>Саған ыңғайлы сабақ.</h2>
+            <div class="videogrid">
+                <div class="videobox"><video id="player" controls playsinline aria-label="Сабақ видеосы"></video>
+                    <p>Өз видеоңды қосып, сабақты осы жерде көр.</p><label class="file">Видео таңдау<input
+                            id="videofile" type="file" accept="video/*"></label><label class="file">Субтитр қосу
+                        (.vtt)<input id="captions" type="file" accept=".vtt"></label>
+                    <p id="videostatus" role="status"></p>
+                </div>
+                <article>
+                    <h3>Бірінші сабақ: экранға мәтін шығару</h3>
+                    <p>Python-да print() командасы нәтижені экранға шығарады. Мәтінді тырнақшаға алып жазамыз.</p>
+                    <pre>print("Сәлем, әлем!")</pre>
+                    <p>Нәтиже: <strong>Сәлем, әлем!</strong></p>
+                    <p>Өзің орында: «Менің алғашқы кодым» деген мәтінді экранға шығар.</p>
+                    <details>
+                        <summary>Жауабын көру</summary>
+                        <pre>print("Менің алғашқы кодым")</pre>
+                    </details>
+                    <div class="notice">Ым тіліндегі бейнесабақтар әзірге жүктелмеген. Бұл бөлімге ым тілі маманымен
+                        түсірілген видеоларды қосуға болады. Жоғарыдағы мәтін — сабақтың оқуға арналған нұсқасы.</div>
+                </article>
+            </div>
+        </section>
+        <section class="support">
+            <div class="eyebrow">ӘР ТҮРЛІ ҚАБІЛЕТ. ОРТАҚ МҮМКІНДІК.</div>
+            <h2>Оқу саған бейімделеді.</h2>
+            <div class="cards">
+                <article><span>↗</span>
+                    <h3>Өз қарқының</h3>
+                    <p>Таймер жоқ. Сабақты қайтала, үзіліс жаса. Жетістігің осы браузерде сақталады.</p>
+                </article>
+                <article><span>◐</span>
+                    <h3>Өзіңе ыңғайлы көрініс</h3>
+                    <p>Үлкен мәтін, жоғары контраст, анық батырмалар және пернетақтамен басқару.</p>
+                </article>
+                <article><span>≡</span>
+                    <h3>Дыбыссыз да түсінікті</h3>
+                    <p>Мәтіндік түсіндірме, жазбаша кері байланыс және қосылатын VTT субтитрлері.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer><a class="logo" href="#">tymio✳</a>
+        <p>Код үйренуге әркімнің құқығы бар.</p><span>Айсана · 3-турға арналған жоба</span>
+    </footer>
+
+    <script src="localization.js"></script>
+    <script src="interface.js"></script>
+    <script src="core.js"></script>
+    <script src="academy-data.js"></script>
+    <script src="academy.js"></script>
+    <script src="quest-data.js"></script>
+    <script src="quest.js"></script>
+    <script src="video-library.js"></script>
+    <script src="support-actions.js"></script>
+    <script src="assistant-knowledge.js"></script>
+    <script src="aiva.js"></script>
+    <script src="experience.js"></script>
+    <script src="sign-language.js"></script>
+    <script src="plus-features.js"></script>
+    <script src="polish.js"></script>
+</body>
+
+</html>
+

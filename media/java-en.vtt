@@ -1,0 +1,26 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:22.000
+Integer division and casting
+Operand types affect computation. Dividing two int values performs integer division, discarding the fractional part.
+
+00:00:22.000 --> 00:00:44.000
+Explanation
+Assigning that result to double does not restore the lost fraction. Cast one operand to double before dividing.
+
+00:00:44.000 --> 00:01:06.000
+Trace the code
+int total = 17;
+int count = 4;
+double average = (double) total / count;
+System.out.println(average);
+
+00:01:06.000 --> 00:01:28.000
+Result
+4.25
+
+17 becomes 17.0 first; 17.0 / 4 = 4.25.
+
+00:01:28.000 --> 00:01:50.000
+Remember
+This often causes incorrect averages. The snippet belongs inside a Java method.

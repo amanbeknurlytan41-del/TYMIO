@@ -1,0 +1,31 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:22.000
+Copies and references
+Passing an int by value creates a copy. Changing the parameter does not change the original variable. int& provides a reference to the original.
+
+00:00:22.000 --> 00:00:44.000
+Explanation
+Changes through a reference are visible outside the function. Understand whether a function reads or modifies its argument.
+
+00:00:44.000 --> 00:01:06.000
+Trace the code
+#include <iostream>
+void byValue(int x) { x += 5; }
+void byReference(int& x) { x += 5; }
+int main() {
+    int a = 10, b = 10;
+    byValue(a);
+    byReference(b);
+    std::cout << a << " " << b;
+}
+
+00:01:06.000 --> 00:01:28.000
+Result
+10 15
+
+Only a copy of a changed; the original b became 15.
+
+00:01:28.000 --> 00:01:50.000
+Remember
+This complete example compares both approaches. Track a and b separately. Const references are also useful for reading large objects.

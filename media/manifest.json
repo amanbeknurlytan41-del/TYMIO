@@ -1,0 +1,146 @@
+[
+  {
+    "course": "python",
+    "language": "kk",
+    "duration": 110,
+    "bytes": 321712
+  },
+  {
+    "course": "python",
+    "language": "ru",
+    "duration": 110,
+    "bytes": 299712
+  },
+  {
+    "course": "python",
+    "language": "en",
+    "duration": 110,
+    "bytes": 282645
+  },
+  {
+    "course": "javascript",
+    "language": "kk",
+    "duration": 110,
+    "bytes": 326520
+  },
+  {
+    "course": "javascript",
+    "language": "ru",
+    "duration": 110,
+    "bytes": 317376
+  },
+  {
+    "course": "javascript",
+    "language": "en",
+    "duration": 110,
+    "bytes": 280970
+  },
+  {
+    "course": "html",
+    "language": "kk",
+    "duration": 110,
+    "bytes": 308928
+  },
+  {
+    "course": "html",
+    "language": "ru",
+    "duration": 110,
+    "bytes": 288064
+  },
+  {
+    "course": "html",
+    "language": "en",
+    "duration": 110,
+    "bytes": 275968
+  },
+  {
+    "course": "css",
+    "language": "kk",
+    "duration": 110,
+    "bytes": 277102
+  },
+  {
+    "course": "css",
+    "language": "ru",
+    "duration": 110,
+    "bytes": 265545
+  },
+  {
+    "course": "css",
+    "language": "en",
+    "duration": 110,
+    "bytes": 260156
+  },
+  {
+    "course": "java",
+    "language": "kk",
+    "duration": 110,
+    "bytes": 259114
+  },
+  {
+    "course": "java",
+    "language": "ru",
+    "duration": 110,
+    "bytes": 259290
+  },
+  {
+    "course": "java",
+    "language": "en",
+    "duration": 110,
+    "bytes": 229388
+  },
+  {
+    "course": "cpp",
+    "language": "kk",
+    "duration": 110,
+    "bytes": 305827
+  },
+  {
+    "course": "cpp",
+    "language": "ru",
+    "duration": 110,
+    "bytes": 286718
+  },
+  {
+    "course": "cpp",
+    "language": "en",
+    "duration": 110,
+    "bytes": 289802
+  },
+  {
+    "course": "csharp",
+    "language": "kk",
+    "duration": 110,
+    "bytes": 291052
+  },
+  {
+    "course": "csharp",
+    "language": "ru",
+    "duration": 110,
+    "bytes": 286689
+  },
+  {
+    "course": "csharp",
+    "language": "en",
+    "duration": 110,
+    "bytes": 259700
+  },
+  {
+    "course": "sql",
+    "language": "kk",
+    "duration": 110,
+    "bytes": 316571
+  },
+  {
+    "course": "sql",
+    "language": "ru",
+    "duration": 110,
+    "bytes": 305573
+  },
+  {
+    "course": "sql",
+    "language": "en",
+    "duration": 110,
+    "bytes": 288792
+  }
+]

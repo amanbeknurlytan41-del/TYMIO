@@ -1,0 +1,27 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:22.000
+Accessible forms
+A form needs more than visual styling: every field needs a clear name and validation rules. Matching label for with input id connects them for assistive technology.
+
+00:00:22.000 --> 00:00:44.000
+Explanation
+A placeholder is not a label: it disappears when typing. type="email" enables basic format validation and required rejects an empty value.
+
+00:00:44.000 --> 00:01:06.000
+Trace the code
+<form>
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email" required>
+  <button type="submit">Send</button>
+</form>
+
+00:01:06.000 --> 00:01:28.000
+Result
+email
+
+for="email" must match id="email".
+
+00:01:28.000 --> 00:01:50.000
+Remember
+Browser validation does not replace server validation. This example teaches structure; no submission backend is attached.
